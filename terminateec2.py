@@ -14,7 +14,6 @@ def lambda_handler(event, context):
         
         print("Region:", region)
         
-    
         #Get only running instances
         instances = ec2.instances.filter(
             Filters=[{'Name': 'instance-state-name',
