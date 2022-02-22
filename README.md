@@ -131,7 +131,7 @@ During this event triggering by CloudWatch I encountered an **issue:**
 
 I was not able to start and stop instances multiple times then I found the issue as I need to increase the timeout in Lambda function. 
 
-Furthermore, whenever there is an update in policy, it takesin effect immediately. 
+Furthermore, whenever there is an update in policy, it takes in effect immediately. 
 
 
 
