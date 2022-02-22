@@ -114,13 +114,9 @@ TO DO THIS...
 **_5- Go to CloudWatch and build Event under Amazon Event Bridge_**
 
   In order to reach the solution, we need to trigger the Lambda function through CloudWatch.
-  For that, go to Amazon Event Bridge and create a rule as **start and stop instances**. During the creation of a rule under Amazon event Bridge, we choose Lambda   function as **TARGET**
-
-  
+  For that, go to Amazon Event Bridge and create a rule as **start and stop instances**. During the creation of a rule under Amazon event Bridge, we choose Lambda   function as **TARGET**.
   After going to Cloudwatch, choose Log Groups to check if event is triggered and refresh the page.
-  
   Event Logs should be visible.
-  
   Then go to EC2 and check if instances get started and stopped.
   
 
@@ -128,12 +124,8 @@ TO DO THIS...
 
 **NOTE**
 
-
 During this event triggering by CloudWatch I encountered an **issue:**
-
-
 I was not able to **start and stop instances** multiple times then I found the issue as I need to **increase the timeout** in Lambda function. 
-
 Furthermore, whenever there is an update in policy, it takes in effect **immediately**. 
 
 
