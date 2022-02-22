@@ -115,6 +115,7 @@ TO DO THIS...
 
   In order to reach the solution, we need to trigger the Lambda function through CloudWatch.
   For that, go to Amazon Event Bridge and create a rule as **start and stop instances**. During the creation of a rule under Amazon event Bridge, we choose Lambda   function as **TARGET**
+
   
   After going to Cloudwatch, choose Log Groups to check if event is triggered and refresh the page.
   
@@ -126,6 +127,7 @@ TO DO THIS...
 
 
 **NOTE**
+
 
 During this event triggering by CloudWatch I encountered an **issue:**
 
@@ -139,4 +141,5 @@ Furthermore, whenever there is an update in policy, it takes in effect immediate
   
   
   
+
 
