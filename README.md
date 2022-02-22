@@ -111,7 +111,7 @@ TO DO THIS...
   - US_East_1: 3 instances
   - US_East_2: 2 instances
 
-**_5- Go to CloudWatch and build and Event under Amazon Event Bridge_**
+**_5- Go to CloudWatch and build Event under Amazon Event Bridge_**
 
   In order to reach the solution, we need to trigger the Lambda function through CloudWatch.
   For that, go to Amazon Event Bridge and create a rule as **start and stop instances**. During the creation of a rule under Amazon event Bridge, we choose Lambda   function as **TARGET**
