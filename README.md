@@ -113,7 +113,7 @@ TO DO THIS...
 **_5- Go to CloudWatch and build and Event under Amazon Event Bridge_**
 
   In order to reach the solution, we need to trigger the Lambda function through CloudWatch.
-  For that, go to Amazon Event Bridge and create a rule as **start and stop instances**. During the creation of a rule under Amazon event Bridge, we choose Lambda   function aas **TARGET* 
+  For that, go to Amazon Event Bridge and create a rule as **start and stop instances**. During the creation of a rule under Amazon event Bridge, we choose Lambda   function as **TARGET**
   
   After going to Cloudwatch, choose Log Groups to check if event is triggered and refresh the page.
   
