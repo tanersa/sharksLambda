@@ -104,15 +104,38 @@ TO DO THIS...
             for instance in instances:
                 instance.stop()
                 print('Stopped instance:', instance.id)
-
-**_4- Go to CloudWatch and build and Event under Amazon Event Bridge_**
-
-  In order to reach the solution, we need to trigger Lambda function where will do thrugh CloudWatch.
   
-**_5- Create EC2 Instances in two different regions as US-East-1 and US-West-1_**
+**_4- Create EC2 Instances in two different regions as US-East-1 and US-West-1_**
 
   - US_East_1: 3 instances
-  - US_East_2: 2 instancess
+  - US_East_2: 2 instances
+
+**_5- Go to CloudWatch and build and Event under Amazon Event Bridge_**
+
+  In order to reach the solution, we need to trigger the Lambda function through CloudWatch.
+  
+  For that, go to Amazon Event Bridge and create a rule as start and stop instances. During the creation of a rule under Amazon event Bridge, we choose Lambda function aas **TARGET**
+  
+  After going to Cloudwatch, choose Log Groups to check if event is triggered and refresh the page.
+  
+  Event Logs should be visible.
+  
+  Then go to EC2 and check if instances get started and stopped.
+  
+
+
+
+**NOTE**
+
+During this event triggering by CloudWatch I encountered an **issue:**
+
+I was not able to start and stop instances multiple times then I found the issue as I need to increase the timeout in Lambda function. 
+
+
+
+
+  
+  
   
   
 
