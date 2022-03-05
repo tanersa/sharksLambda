@@ -14,12 +14,11 @@ and only pay for what you use.
 
 New Task:
 
-
 We want to build Cost Optimized Infrastructure. 
 In our current Infrastructure we have 2 Environments: 1) Dev and 2) Prod 
- Prod Environment is a critical Environment. We want to have Zero Downtime in Prod Environment
- But Unlike to Prod Environment Dev Environment is non critical. It means we can start and stop instances.
- In Dev Environment we do development everyday from 9 am to 6 pm. 
+Prod Environment is a critical Environment. We want to have Zero Downtime in Prod Environment
+But Unlike to Prod Environment Dev Environment is non critical. It means we can start and stop instances.
+In Dev Environment we do development everyday from 9 am to 6 pm. 
 
 In order to achieve this solution good option is to use Lambda Function. 
 
