@@ -11,6 +11,7 @@
             "Resource": "arn:aws:logs:*:*:*"
         },
         {
+            
             "Effect": "Allow",
             "Action": [
                 "ec2:DescribeVolumes",
