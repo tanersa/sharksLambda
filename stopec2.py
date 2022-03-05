@@ -20,7 +20,6 @@ def lambda_handler(event, context):
             Filters=[{'Name': 'instance-state-name',
                         'Values': ['running']}])
                         
-        
         #Stop the instances
         for instance in instances:
             instance.stop()
